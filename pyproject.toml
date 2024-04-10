@@ -1,0 +1,22 @@
+[tool.poetry]
+name = "gpuery"
+version = "0.1.0"
+description = "A simple GPU available querier on isolated node"
+authors = ["Hugh <hugh.lpd@gmail.com>"]
+license = "BSD"
+readme = "README.md"
+classifiers = [
+  "Typing :: Typed",
+  "Programming Language :: Python :: 3 :: Only"
+]
+repository = "https://github.com/HUGHNew/gpuery"
+
+[tool.poetry.dependencies]
+python = "^3.6"
+
+[tool.poetry.extras]
+nvml = ["nvidia-ml-py"]
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
